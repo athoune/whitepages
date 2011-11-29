@@ -11,13 +11,22 @@ g.jpeg(function(jpeg) {
             mail: "robert@dupond.com",
             givenname: "Robert",
             sn: "bob",
-            ou: "dupondinc",
-            jpegphoto: jpeg
+            o: "dupondinc",
+            ou: "sales",
+            jpegPhoto: jpeg,
+            c: "france",
+            labeledURI: "http://github.com",
+            nickname: "Bob",
+            xmozillanickname: "Bob le mozillien",
+            info: "more infos",
+            uid: "bdupond",
+            description: "Description",
+            displayName: "RoBeRt"
           }]);
 
     wp.read(book);
     wp.listen(1389, '127.0.0.1', function(){
-        console.log("Withe pages at %s", wp.ldap.url);
+        console.log("White pages at %s", wp.ldap.url);
     })
 
 });
