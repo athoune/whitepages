@@ -3,17 +3,17 @@ var Book = require('./lib/book').Book,
     WhitePages = require('./lib/whitepages').WhitePages;
 
 var wp = new WhitePages();
-var g = new Gravatar('mathieu@garambrogne.net')
-g.jpeg(function(jpeg) {
+var g = new Gravatar('mathieu@garambrogne.net');
+g.jpeg(function(avatar) {
     var book = new Book([{
             objectclass: ["person", "top" ],
             cn: "Robert Dupond",
             mail: "robert@dupond.com",
             givenname: "Robert",
-            sn: "bob",
+            sn: "Dupont",
             o: "dupondinc",
             ou: "sales",
-            jpegPhoto: jpeg,
+            'jpegPhoto;binary': avatar,
             c: "france",
             labeledURI: "http://github.com",
             nickname: "Bob",
@@ -27,6 +27,6 @@ g.jpeg(function(jpeg) {
     wp.read(book);
     wp.listen(1389, '127.0.0.1', function(){
         console.log("White pages at %s", wp.ldap.url);
-    })
+    });
 
 });
