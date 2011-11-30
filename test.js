@@ -7,7 +7,7 @@ var g = new Gravatar('mathieu@garambrogne.net');
 g.jpeg(function(avatar) {
     var book = new Book([{
             objectclass: ["person", "top" ],
-            cn: "Robert Dupond",
+            cn: "Robert Dupond junior",
             mail: "robert@dupond.com",
             givenname: "Robert",
             sn: "Dupont",
@@ -19,7 +19,7 @@ g.jpeg(function(avatar) {
             nickname: "Bob",
             xmozillanickname: "Bob le mozillien",
             info: "more infos",
-            uid: "bdupond",
+            uid: "rdupond",
             description: "Description",
             displayName: "RoBeRt"
           }]);
