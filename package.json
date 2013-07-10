@@ -1,11 +1,11 @@
 {
     "name"         : "whitepages",
-    "version"      : "0.0.1",
+    "version"      : "0.0.2",
     "main"         : "./lib/withepages",
     "description"  : "Speak LDAP",
     "author"       : "Mathieu Lecarme <mathieu@garambrogne.net>",
     "dependencies" : {
-        "ldapjs"   : ">= 0.3.4"
+        "ldapjs"   : ">= 0.6.3"
     },
     "keywords"     : ["ldap"],
     "licenses"     : [{"type": "MIT"}],
