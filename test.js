@@ -7,7 +7,7 @@ var g = new Gravatar('mathieu@garambrogne.net');
 g.jpeg(function(avatar) {
     var book = new Book([{
             objectclass: ["person", "top" ],
-            cn: "Robert Dupond junior",
+            cn: ["Robert Dupond junior", "Blob"],
             mail: "robert@dupond.com",
             givenname: "Robert",
             sn: "Dupont",
@@ -23,7 +23,6 @@ g.jpeg(function(avatar) {
             description: "Description",
             displayName: "RoBeRt"
           }]);
-
     wp.read(book);
     wp.listen(1389, '127.0.0.1', function(){
         console.log("White pages at %s", wp.ldap.url);
