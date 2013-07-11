@@ -1,6 +1,7 @@
-var Book = require('./lib/book').Book,
-    Gravatar = require('./lib/gravatar').Gravatar,
-    WhitePages = require('./lib/whitepages').WhitePages;
+var Gravatar = require('./lib/gravatar').Gravatar,
+    wp = require('./lib/whitepages'),
+    WhitePages = wp.WhitePages,
+    Book = wp.Book;
 
 var wp = new WhitePages();
 var g = new Gravatar('mathieu@garambrogne.net');
