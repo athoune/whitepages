@@ -1,7 +1,7 @@
 {
     "name"         : "whitepages",
-    "version"      : "0.0.3",
-    "main"         : "lib/withepages",
+    "version"      : "0.0.4",
+    "main"         : "lib/whitepages",
     "directories"  : {
         "lib": "./lib"
     },
