@@ -1,7 +1,10 @@
 {
     "name"         : "whitepages",
-    "version"      : "0.0.2",
-    "main"         : "./lib/withepages",
+    "version"      : "0.0.3",
+    "main"         : "lib/withepages",
+    "directories"  : {
+        "lib": "./lib"
+    },
     "description"  : "Speak LDAP",
     "author"       : "Mathieu Lecarme <mathieu@garambrogne.net>",
     "dependencies" : {
