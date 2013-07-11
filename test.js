@@ -1,9 +1,9 @@
 var Gravatar = require('./lib/gravatar').Gravatar,
-    wp = require('./lib/whitepages'),
-    WhitePages = wp.WhitePages,
-    JsonBook = wp.JsonBook;
+    white = require('./lib/whitepages.js'),
+    WhitePages = white.WhitePages,
+    JsonBook = white.JsonBook;
 
-var wp = new WhitePages();
+var wp = new WhitePages('o=whitepages');
 var g = new Gravatar('mathieu@garambrogne.net');
 g.jpeg(function(avatar) {
     var book = new JsonBook('test.json');
