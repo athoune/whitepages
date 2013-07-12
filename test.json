@@ -4,7 +4,7 @@
     "mail": "robert@dupond.com",
     "givenname": "Robert",
     "sn": "Dupont",
-    "o": "dupondinc",
+    "o": "whitepages",
     "ou": "sales",
     "c": "france",
     "labeledURI": "http://github.com",
@@ -14,4 +14,22 @@
     "uid": "rdupond",
     "description": "Description",
     "displayName": "RoBeRt"
-}]
+},
+{
+    "objectclass": ["person", "top" ],
+    "cn": ["Casimir Perrier"],
+    "mail": "casimir@perrier.com",
+    "givenname": "Casimir",
+    "sn": "Perrier",
+    "o": "dupondinc",
+    "ou": "sales",
+    "c": "france",
+    "labeledURI": "http://github.com",
+    "nickname": "dino",
+    "xmozillanickname": "dino",
+    "info": "more infos",
+    "uid": "cperrier",
+    "description": "Description",
+    "displayName": "Kazimir Perrier"
+}
+]
